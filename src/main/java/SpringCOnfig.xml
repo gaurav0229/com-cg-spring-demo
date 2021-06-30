@@ -1,5 +1,5 @@
 
-  
+
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
@@ -36,4 +36,37 @@
 		<constructor-arg value="10.5" type="double"></constructor-arg>
 	</bean>
 
+	<!-- Collection injection -->
+	<bean id="department" class="com.cg.spring.demo.Department">
+		<property name="id" value="10"></property>
+		<property name="name" value="HR"></property>
+		<property name="functions">
+			<list>
+				<value>Human Resourse</value>
+				<value>Payroll</value>
+				<value>Computer Science</value>
+				<value>Entc</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- Inner Bean -->
+<!-- 	<bean id="employee5" class="com.cg.spring.demo.Employee">
+		<property name="eid"><value>111</value></property>
+		<property name="ename"><value>Vaibhav</value></property>
+		<property name="salary"><value>222</value></property>
+		<property name="dept">
+			<bean id="department1" class="com.cg.spring.demo.Department">
+				<property name="id" value="20"></property>
+				<property name="name" value="Marketing"></property>
+				<property name="functions">
+					<list>
+						<value>Sales</value>
+						<value>Promotion</value>
+						<value>Customer Care</value>
+					</list>
+				</property>
+			</bean>
+		</property>
+	</bean> -->
 </beans>
