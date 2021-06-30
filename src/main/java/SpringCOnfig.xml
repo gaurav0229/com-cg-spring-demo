@@ -1,16 +1,39 @@
+
+  
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
+	<!-- This is a comment. -->
+
+	<!-- bean definition -->
+	<!-- <bean id="employee" class="com.cg.spring.demo.Employee"> </bean> -->
+
+	<!-- Property injection / Setter injection -->
+
 	<bean id="employee" class="com.cg.spring.demo.Employee">
 		<property name="ename">
-			<value>Gaurav SOnawane</value>
+			<value>Gaurav Sonawane </value>
 		</property>
 	</bean>
+
 	<bean id="employee2" class="com.cg.spring.demo.Employee">
 		<property name="ename">
-			<value>NAvin Reddy</value>
+			<value>Suresh Reddy</value>
 		</property>
 	</bean>
+
+	<!-- Constructor injection -->
+
+	<bean id="employee3" class="com.cg.spring.demo.Employee">
+		<constructor-arg value="Sonu" type="String"></constructor-arg>
+	</bean>
+
+	<bean id="employee4" class="com.cg.spring.demo.Employee">
+		<constructor-arg value="101" type="int"></constructor-arg>
+		<constructor-arg value="Monu" type="String"></constructor-arg>
+		<constructor-arg value="10.5" type="double"></constructor-arg>
+	</bean>
+
 </beans>
