@@ -1,7 +1,7 @@
 package com.cg.spring.demo;
 
 /**
- * Hello world!
+ * @author Gaurav
  *
  */
 public class App 
