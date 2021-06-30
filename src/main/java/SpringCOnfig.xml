@@ -4,6 +4,10 @@
  http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
 	<bean id="employee" class="com.cg.spring.demo.Employee">
+		<property name="ename">
+			<value>Gaurav SOnawane</value>
+		</property>
+
 	</bean>
 
 </beans>
