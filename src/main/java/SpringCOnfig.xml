@@ -101,4 +101,17 @@
 			</bean>
 		</constructor-arg>
 	</bean>
-</beans>
+	
+	
+	<!-- Autowiring using constructor injection -->
+
+	<bean id="employee9" class="com.cg.spring.demo.Employee"
+	autowire="constructor">
+		<constructor-arg value="109" type="int"></constructor-arg>
+		<constructor-arg value="Amit" type="java.lang.String"></constructor-arg>
+		<constructor-arg value="22.22" type="double"></constructor-arg>
+		<constructor-arg type="com.cg.spring.demo.Department"
+	ref="department1"></constructor-arg>
+	</bean>
+	
+</beans>	

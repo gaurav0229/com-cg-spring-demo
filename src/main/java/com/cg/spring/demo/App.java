@@ -36,6 +36,12 @@ public class App {
 		Employee emp6 = context.getBean("employee6", Employee.class);
 		System.out.println(emp6.toString());
 
+		
+		System.out.println("Autowiring using constructor injection");
+
+		Employee emp9 = context.getBean("employee9", Employee.class);
+		System.out.println(emp9.toString());
+		
 		System.out.println("End");
 		((AbstractApplicationContext) context).close();
 	}
