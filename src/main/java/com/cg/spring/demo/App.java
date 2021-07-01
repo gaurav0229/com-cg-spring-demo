@@ -4,7 +4,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-
 /**
  * @author Gaurav
  *
@@ -27,17 +26,15 @@ public class App {
 
 		Employee emp4 = context.getBean("employee4", Employee.class);
 		System.out.println(emp4.toString());
-		
-		
-		Department dept =context.getBean("department",Department.class);
+
+		Department dept = context.getBean("department1", Department.class);
 		System.out.println(dept.toString());
-		
-		
-//		Department dept1 =context.getBean("department1",Department.class);
-//		System.out.println(dept1.toString());
-//		
-//		Employee emp5 = context.getBean("employee5", Employee.class);
-//		System.out.println(emp5.toString());
+
+		Employee emp5 = context.getBean("employee5", Employee.class);
+		System.out.println(emp5.toString());
+
+		Employee emp6 = context.getBean("employee6", Employee.class);
+		System.out.println(emp6.toString());
 
 		System.out.println("End");
 		((AbstractApplicationContext) context).close();

@@ -13,6 +13,16 @@ public class Department {
 		super();
 	}
 	
+	public Department(String name) {
+		super();
+		this.name = name;
+	}
+	public Department(int id, String name, List<String> functions) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.functions = functions;
+	}
 	public int getId() {
 		return id;
 	}
@@ -31,12 +41,7 @@ public class Department {
 	public void setFunctions(List<String> functions) {
 		this.functions = functions;
 	}
-	public Department(int id, String name, List<String> functions) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.functions = functions;
-	}
+	
 	@Override
 	public String toString() {
 		return "Department [id=" + id + ", name=" + name + ", functions=" + functions + "]";
